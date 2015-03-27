@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{95F46A18-A014-41A6-9F7E-CA1F4DE0FC4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C9CC8ECD-EC56-4A07-9B42-172EA04BB6D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B5BB7C37-0B33-4387-BB7F-E46D5ECC01AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61028386-BB3B-4AC1-88DB-A7122014C8B8}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momola.Random", "Momola.Random\Momola.Random.csproj", "{D9B3BC49-8321-477E-9250-E380721B5B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momola.Random.Tests", "Momola.Random.Tests\Momola.Random.Tests.csproj", "{1DDD1EE9-2FC6-4338-AA99-53D39345EC67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B3BC49-8321-477E-9250-E380721B5B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B3BC49-8321-477E-9250-E380721B5B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B3BC49-8321-477E-9250-E380721B5B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B3BC49-8321-477E-9250-E380721B5B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDD1EE9-2FC6-4338-AA99-53D39345EC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDD1EE9-2FC6-4338-AA99-53D39345EC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDD1EE9-2FC6-4338-AA99-53D39345EC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDD1EE9-2FC6-4338-AA99-53D39345EC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9B3BC49-8321-477E-9250-E380721B5B06} = {C9CC8ECD-EC56-4A07-9B42-172EA04BB6D3}
+		{1DDD1EE9-2FC6-4338-AA99-53D39345EC67} = {C9CC8ECD-EC56-4A07-9B42-172EA04BB6D3}
+	EndGlobalSection
+EndGlobal
