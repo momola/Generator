@@ -7,7 +7,7 @@ namespace Momola.Random.Generators
     {
         public string GetRandom()
         {
-            return null;
+            return null; // test commit
         }
 
         public string GetRandom(Enums.Gender gender)
