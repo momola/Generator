@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Momola.Random.Enums
 {
-    public enum  Gender
+    public enum Gender
     {
         Male,
         Female
