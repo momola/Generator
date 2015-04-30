@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Momola.Random.Enums;
+using Momola.Random.Model;
 
 namespace Momola.Random.Generators
 {
     class RandomSurname
     {
-         private int countValues;
+        
+        private int countValues;
         private System.Random myRandom;
         private int randValue;
         private string returnSurname;
@@ -16,9 +19,10 @@ namespace Momola.Random.Generators
 
         public RandomSurname()
         {
+            
           myRandom = new System.Random();
-          surnameList=new List<string>();
-          surnameList.Add("Nowak");
+          surnameList=new List<string>(); 
+          
           surnameList.Add("Kowalski");
           surnameList.Add("Malysz");
          
