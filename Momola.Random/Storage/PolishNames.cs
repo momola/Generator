@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Momola.Random.Abstraction;
 using Momola.Random.Enums;
 using Momola.Random.Model;
 
 namespace Momola.Random.Storage
 {
-    class PolishNames
+   public class PolishNames: IGenderStringStorage
     {
-        private List<GenderString> nameList;
-        
+        private List<GenderString> _list;
+
 
         public PolishNames()
         {
-            nameList = new List<GenderString>()
+            _list = new List<GenderString>()
             {
                 new GenderString("Alicja", Gender.Female),
                 new GenderString("Karolina", Gender.Female),
@@ -26,12 +27,9 @@ namespace Momola.Random.Storage
             };
         }
 
-        public List<Model.GenderString> NameList
+        public List<Model.GenderString> List
         {
-            get { return nameList; }
-            
+            get { return _list; }
         }
-        
     }
-
 }

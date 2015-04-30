@@ -39,8 +39,10 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstraction\IRandomName.cs" />
-    <Compile Include="Abstraction\RandomAbstract.cs" />
+    <Compile Include="Abstraction\IGenderStringStorage.cs" />
+    <Compile Include="Abstraction\IRandomDate.cs" />
+    <Compile Include="Abstraction\IRandomGenderString.cs" />
+    <Compile Include="Abstraction\RandomGenderString.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Generators\RandomName.cs" />
     <Compile Include="Generators\RandomSurname.cs" />

@@ -2,6 +2,7 @@
 using Momola.Random.Abstraction;
 using Momola.Random.Enums;
 using Momola.Random.Generators;
+using Momola.Random.Storage;
 using NUnit.Framework;
 
 namespace Momola.Random.Tests.Generators
@@ -15,7 +16,7 @@ namespace Momola.Random.Tests.Generators
             //Arrange
             
             //Act 
-            IRandomName nameGen = new RandomName();
+            IRandomGenderString nameGen = new RandomName(new PolishNames());
             string result = nameGen.GetRandom();
 
             //Assert
@@ -29,7 +30,7 @@ namespace Momola.Random.Tests.Generators
             //Arrange
 
             //Act 
-            IRandomName nameGen = new RandomName();
+            IRandomGenderString nameGen = new RandomName(new PolishNames());
             string result = nameGen.GetRandom(gender);
 
             //Assert

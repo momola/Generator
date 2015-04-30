@@ -6,7 +6,10 @@ using Momola.Random.Storage;
 
 namespace Momola.Random.Generators
 {
-    public class RandomName : RandomAbstract
+    public class RandomName : RandomGenderString
     {
+        public RandomName(IGenderStringStorage storage) : base(storage)
+        {
+        }
     }
 }

@@ -3,7 +3,7 @@ using Momola.Random.Enums;
 
 namespace Momola.Random.Abstraction
 {
-    public interface IRandomName
+    public interface IRandomGenderString
     {
         String GetRandom();
         String GetRandom(Gender gender);

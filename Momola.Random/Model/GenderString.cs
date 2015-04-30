@@ -7,7 +7,7 @@ using Momola.Random.Enums;
 
 namespace Momola.Random.Model
 {
-    class GenderString
+    public class GenderString
     {
         public string Name;
         public Gender Gender;

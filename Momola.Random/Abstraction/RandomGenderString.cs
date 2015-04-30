@@ -10,26 +10,31 @@ using System.Linq;
 
 namespace Momola.Random.Abstraction
 {
-    public class RandomAbstract: IRandomName
+    public class RandomGenderString: IRandomGenderString
     {
 
         private int countValues;
         private System.Random myRandom= new System.Random();
         private int randValue;
         private string returnName;
-        private PolishNames Lista = new PolishNames();
+        private readonly IGenderStringStorage storage;
+
+        public RandomGenderString(IGenderStringStorage storage)
+        {
+            this.storage = storage;
+        }
 
         public string GetRandom()
         {
-            countValues = Lista.NameList.Count;
+            countValues = storage.List.Count;
             randValue = myRandom.Next(countValues);
-            returnName = Lista.NameList[randValue].Name;
+            returnName = storage.List[randValue].Name;
             return returnName;
         }
 
         public string GetRandom(Enums.Gender gender)
         {
-            List<GenderString> genderList = Lista.NameList.Where(n => n.Gender == gender).ToList();
+            List<GenderString> genderList = storage.List.Where(n => n.Gender == gender).ToList();
             countValues = genderList.Count;
             randValue = myRandom.Next(countValues);
             returnName = genderList[randValue].Name;
