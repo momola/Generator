@@ -21,9 +21,10 @@ namespace Momola.Random.Tests.Generators
                 DateTime result = dateGen.GetRandom();
 
                 //Assert
-                Assert.IsNullOrEmpty(result.ToShortDateString(), "GetRandom should return not empty datetime");
+                Assert.IsNotNull(result.ToShortDateString(), "GetRandom should return not empty datetime");
+                Assert.IsNotEmpty(result.ToShortDateString(), "Get random should return not empty or white space value");
             }
-         [Test]
+          [TestCase("1/1/1990", "30/12/1990")]
             public void GetRandomShouldReturnNotEmptyDateBetweenDates(DateTime startTime, DateTime endTime)
             {
                 //Arrange
@@ -36,7 +37,7 @@ namespace Momola.Random.Tests.Generators
                 Assert.IsNotNull(result, "Get random should return not null value.");
                 Assert.IsNotEmpty(result.ToShortDateString(), "Get random should return not empty or white space value");
             }
-         [Test]
+         [TestCase(2000)]
             public void GetRandomShouldReturnNotEmptyDateWithYear(int year)
             {
                 //Arrange
@@ -49,7 +50,7 @@ namespace Momola.Random.Tests.Generators
                 Assert.IsNotNull(result, "Get random should return not null value.");
                 Assert.IsNotEmpty(result.ToShortDateString(), "Get random should return not empty or white space value");
             }
-         [Test]
+         [TestCase(1900, 12)]
             public void GetRandomShouldReturnNotEmptyDateWithYearAndMonth(int year, int month)
             {
                 //Arrange

@@ -14,12 +14,13 @@ namespace Momola.Random.Generators
         public TimeSpan mySpan = new TimeSpan();
         private int howDays;
         private int randValue;
-
+       
         
         public DateTime GetRandom()
         {
-           randValue= MyRandom.Next(10000);
-           myDate = myDate.Date;
+           randValue= MyRandom.Next(50000);
+           myDate = DateTime.Now;
+           //myDate = myDate.Date;
            myDate = myDate.AddDays(-randValue);
            return myDate;
 
